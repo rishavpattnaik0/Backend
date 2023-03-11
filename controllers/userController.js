@@ -3,7 +3,7 @@ import User from "../models/User.js"
 
 // Making Promise
 import bigPromise from "../middlewares/bigPromise.js"
-import { cookieToken } from "../utils/Cookietoken";
+import { cookieToken } from "../utils/Cookietoken.js";
 export const createUser = bigPromise(async(req,res,next)=>{
     const {username,email,password}=req.body;
     console.log(req.body);
