@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "Telegram-Bot",
+    "name": "Laundry-Site",
     "builds": [
        { "src": "index.js", "use": "@vercel/node" }
     ],
