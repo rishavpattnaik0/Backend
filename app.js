@@ -13,7 +13,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //cookies and filemiddleware
 app.use(cookieParser())
 
-
+app.get("/",function(req,res){
+    return res.status(200).json({
+        success:true,
+        message:"API Health is good"
+    })
+})
 // morgan middlewares
 app.use(morgan("tiny"))
 
